@@ -1,13 +1,128 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+*{
+  font-family: 'Inter';
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+.header{
+  display: flex;
+  justify-content: center
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.header-nav{
+  width: 800px;
+  display: flex;
+  padding: 1.5em 2em;
+  justify-content: space-between;
+  border-bottom: 1px solid grey;
+}
+.nav-brand{
+  font-size: 1.5em;
+  font-weight: 600;
+  margin: 0;
+  color: teal;  
+}
+.red{
+  color:red
+}
+.nav-anchors a{
+  text-decoration: none;
+  color: rgb(12, 191, 191);
+  margin-inline: 1em;
+  font-weight: 500;
+}
+
+.nav-anchors>a:hover{
+  color: teal;
+}
+
+.home{
+  width: 800px;
+}
+
+.blog{
+  background-color: rgb(236, 243, 243);
+  margin:1.5em 7em;
+  padding: 1em 2em;
+  border-radius: 15px;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+}
+.blog:hover{
+  background-color: rgb(201, 243, 243);
+}
+.blog h4{
+  font-size: 1.4em;
+  font-weight: normal;
+  margin-bottom: 0.3em;
+}
+.blog h6{
+  font-size: 0.8em;
+  font-weight: normal;
+  margin-left: 0.6em;
+}
+.addblog{
+  width: 800px;
+  padding: 2em 7em;
+}
+.blog-form>input{
+  margin-bottom: 1.3em;
+}
+label{
+  margin-bottom:0.3em;
+  font-size: 1.1em;
+  display: inline-block;
+}
+.input-box{
+  width: 100%;
+  padding: 0.5em;
+  font-size: 1em;
+}
+
+.blog-btn{
+  padding: 0.4em 1.5em;
+  font-size: 0.95em;
+  background-color: teal;
+  border: 0;
+  color: white;
+  border-radius: 15px;
+  margin-top:0.8em;
+  cursor: pointer;
+}
+.blog-btn:hover{
+  background-color: rgb(86, 146, 146);
+}
+.blog a{
+  text-decoration: none;
+}
+.blog a:active{
+  color: teal;
+}
+.view-blog{
+  width: 800px;
+  padding: 2em 5em;
+}
+.view-blog h2{
+  font-weight: normal;
+  font-size: 2em;
+  margin-bottom: 0.3em;
+}
+.view-blog h4{
+  font-weight: normal;
+  font-size: 1.1em;
+  margin-bottom: 1em;
+}
+.view-blog p{
+  font-weight: normal;
+  font-size: 1em;
+  margin-top: 0.7em;
+  text-align: justify;
+}
+
+.loading{
+  font-size: 1em;
+  font-weight: normal;
+  margin-left: 10em;
+  margin-top: 2em;
 }
